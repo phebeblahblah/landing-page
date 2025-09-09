@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Under Construction</title>
+
+  <!--
+  ADOBE FONTS INTEGRATION:
+  Replace the xxxxxxx below with your actual Adobe Fonts Project ID link.
+  Example you get from Adobe Fonts:
+  <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css">
+  -->
+  <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css">
+
+  <style>
+    :root {
+      --bg: #ffffff;               /* background color */
+      --fg: #111111;               /* main text color */
+      --muted: #111111;            /* footer text color */
+      --font-family: "YourAdobeFontName", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; /* update with Adobe font name */
+      --headline-size: clamp(16px, 3.2vw, 28px);
+      --headline-weight: 600;
+      --headline-tracking: 0.3em;
+      --footer-size: clamp(11px, 1.4vw, 13px);
+      --corner-size: clamp(48px, 10vw, 120px);
+      --corner-mark: "’";          /* change to a comma, quote, or any symbol */
+      --page-padding: clamp(16px, 4vw, 40px);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-family);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: var(--page-padding);
+    }
+
+    .corner {
+      position: fixed;
+      top: var(--page-padding);
+      left: var(--page-padding);
+      line-height: 1;
+      font-size: var(--corner-size);
+      font-weight: 700;
+      user-select: none;
+      color: var(--fg);
+    }
+    .corner::before { content: var(--corner-mark); }
+
+    main {
+      display: grid;
+      place-items: center;
+    }
+
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: var(--headline-tracking);
+      font-size: var(--headline-size);
+      font-weight: var(--headline-weight);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    footer {
+      align-self: end;
+      text-align: center;
+      font-size: var(--footer-size);
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      padding-block: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="corner" aria-hidden="true"></div>
+
+    <main>
+      <h1>SITE UNDER CONSTRUCTION</h1>
+    </main>
+
+    <footer>
+      © BLAH—BLAH PR 2025
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Under Construction</title>
+
+  <!-- Adobe Fonts: replace PROJECT_ID with your kit ID -->
+  <link rel="stylesheet" href="https://use.typekit.net/PROJECT_ID.css">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --font-family: "wedding-gothic-atf", sans-serif; /* update with your Adobe font name */
+      --headline-size: clamp(18px, 3.5vw, 32px);
+      --headline-weight: 500; /* match the weight you included in Adobe Fonts */
+      --footer-size: clamp(11px, 1.4vw, 13px);
+      --page-pad: clamp(16px, 4vw, 48px);
+      --logo-size: clamp(48px, 10vw, 120px);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-family);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: var(--page-pad);
+    }
+
+    /* Logo in the top-left corner */
+    .logo {
+      position: fixed;
+      top: var(--page-pad);
+      left: var(--page-pad);
+      height: var(--logo-size);
+      width: auto;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* Centered headline */
+    main {
+      display: grid;
+      place-items: center;
+    }
+    h1 {
+      margin: 0;
+      font-weight: var(--headline-weight);
+      font-size: var(--headline-size);
+      text-align: center;
+    }
+
+    /* Footer text */
+    footer {
+      align-self: end;
+      text-align: center;
+      font-size: var(--footer-size);
+      padding-block: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Logo loads from /public/logo.svg -->
+    <img class="logo" src="/logo.svg" alt="Logo">
+
+    <main>
+      <h1>SITE UNDER CONSTRUCTION</h1>
+    </main>
+
+    <footer>
+      © BLAH—BLAH PR 2025
+    </footer>
+  </div>
+</body>
+</html>

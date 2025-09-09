@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Site Under Construction</title>
 
-  <!-- Adobe Fonts Embed -->
+  <!-- Adobe Fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/wak2job.css">
 
   <style>
@@ -13,67 +13,23 @@
       --bg: #ffffff;
       --fg: #111111;
       --muted: #111111;
-      --font-family: "wedding-gothic-atf", sans-serif; /* Adobe font family */
+      --font-family: "wedding-gothic-atf", sans-serif;
       --headline-size: clamp(16px, 3.2vw, 28px);
-      --headline-weight: 500;
+      --headline-weight: 500;   /* matches your kit */
       --headline-tracking: 0.3em;
       --footer-size: clamp(11px, 1.4vw, 13px);
       --corner-size: clamp(48px, 10vw, 120px);
       --corner-mark: "’";
       --page-padding: clamp(16px, 4vw, 40px);
     }
-
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: var(--font-family);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    .page {
-      min-height: 100svh;
-      display: grid;
-      grid-template-rows: 1fr auto;
-      padding: var(--page-padding);
-    }
-
-    .corner {
-      position: fixed;
-      top: var(--page-padding);
-      left: var(--page-padding);
-      line-height: 1;
-      font-size: var(--corner-size);
-      font-weight: 700;
-      user-select: none;
-      color: var(--fg);
-    }
-    .corner::before { content: var(--corner-mark); }
-
-    main { display: grid; place-items: center; }
-
-    h1 {
-      margin: 0;
-      text-transform: uppercase;
-      letter-spacing: var(--headline-tracking);
-      font-size: var(--headline-size);
-      font-weight: var(--headline-weight);
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    footer {
-      align-self: end;
-      text-align: center;
-      font-size: var(--footer-size);
-      color: var(--muted);
-      letter-spacing: 0.08em;
-      padding-block: 8px;
-    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-family);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    .page{min-height:100svh;display:grid;grid-template-rows:1fr auto;padding:var(--page-padding)}
+    .corner{position:fixed;top:var(--page-padding);left:var(--page-padding);line-height:1;font-size:var(--corner-size);font-weight:700;user-select:none;color:var(--fg)}
+    .corner::before{content:var(--corner-mark)}
+    main{display:grid;place-items:center}
+    h1{margin:0;text-transform:uppercase;letter-spacing:var(--headline-tracking);font-size:var(--headline-size);font-weight:var(--headline-weight);text-align:center;white-space:nowrap}
+    footer{align-self:end;text-align:center;font-size:var(--footer-size);color:var(--muted);letter-spacing:.08em;padding-block:8px}
   </style>
 </head>
 <body>

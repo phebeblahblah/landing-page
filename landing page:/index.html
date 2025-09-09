@@ -12,9 +12,9 @@
     :root {
       --bg: #ffffff;
       --fg: #111111;
-      --font-family: "wedding-gothic-atf", sans-serif; /* update to your Adobe font */
-      --headline-size: clamp(16px, 3.2vw, 28px);
-      --headline-weight: 500;
+      --font-family: "wedding-gothic-atf", sans-serif; /* update with your Adobe font name */
+      --headline-size: clamp(18px, 3.5vw, 32px);
+      --headline-weight: 500; /* match the weight you included in Adobe Fonts */
       --footer-size: clamp(11px, 1.4vw, 13px);
       --page-pad: clamp(16px, 4vw, 48px);
       --logo-size: clamp(48px, 10vw, 120px);
@@ -38,6 +38,7 @@
       padding: var(--page-pad);
     }
 
+    /* Logo in the top-left corner */
     .logo {
       position: fixed;
       top: var(--page-pad);
@@ -49,8 +50,11 @@
       pointer-events: none;
     }
 
-    main { display: grid; place-items: center; }
-
+    /* Centered headline */
+    main {
+      display: grid;
+      place-items: center;
+    }
     h1 {
       margin: 0;
       font-weight: var(--headline-weight);
@@ -58,6 +62,7 @@
       text-align: center;
     }
 
+    /* Footer text */
     footer {
       align-self: end;
       text-align: center;
@@ -68,7 +73,8 @@
 </head>
 <body>
   <div class="page">
-    <img class="logo" src="/logo.svg" alt="" aria-hidden="true">
+    <!-- Logo loads from /public/logo.svg -->
+    <img class="logo" src="/logo.svg" alt="Logo">
 
     <main>
       <h1>SITE UNDER CONSTRUCTION</h1>
